@@ -11,8 +11,15 @@
 
 @interface ViewController () <CLLocationManagerDelegate>
 @property (nonatomic, strong) CLLocationManager *locationMgr;
+@property (nonatomic, strong) CLGeocoder *geoCoder;
 @property (weak, nonatomic) IBOutlet UILabel *infoLabel;
 @property (weak, nonatomic) IBOutlet UILabel *authStatusLabel;
+/// 地址输入框
+@property (weak, nonatomic) IBOutlet UITextView *addrTextView;
+/// 纬度
+@property (weak, nonatomic) IBOutlet UITextField *latitudeTextField;
+/// 经度
+@property (weak, nonatomic) IBOutlet UITextField *longitudeTextField;
 
 @end
 
@@ -93,6 +100,13 @@
     return _locationMgr;
 }
 
+- (CLGeocoder *)geoCoder {
+    if (!_geoCoder) {
+        _geoCoder = [[CLGeocoder alloc] init];
+    }
+    return _geoCoder;
+}
+
 //
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -140,10 +154,9 @@ static NSInteger locateTimes = 1;
     }
 }
 
-#pragma mark - 开始定位
+#pragma mark - 按钮点击
 /// 更新位置
 - (IBAction)locate:(UIButton *)sender {
-    sender.selected = !sender.selected;
     if (sender.selected) {
         // 已经定位过了
         [self.locationMgr stopUpdatingLocation];
@@ -151,10 +164,42 @@ static NSInteger locateTimes = 1;
         // 开始更新位置。
         [self.locationMgr startUpdatingLocation];
     }
+    sender.selected = !sender.selected;
 
     // 开始更新位置，定位精确度从模糊到精确，注意调用此方法必须要实现代理方法locationManager:didFailWithError: 其他使用注意请参考苹果文档。
     // [self.locationMgr requestLocation];
     // 以上两种方法同时只可有一种存在，苹果文档中有说明。
+}
+
+/// 地理编码
+- (IBAction)geoCode:(UIButton *)sender {
+    if (!self.addrTextView.text.length) {
+        return;
+    }
+    [self.geoCoder geocodeAddressString:self.addrTextView.text completionHandler:^(NSArray<CLPlacemark *> * _Nullable placemarks, NSError * _Nullable error) {
+        if (error) {
+            self.addrTextView.text = @"输入地址不存在";
+            self.latitudeTextField.text = @"";
+            self.longitudeTextField.text = @"";
+        } else {
+            [placemarks enumerateObjectsUsingBlock:^(CLPlacemark * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+                self.addrTextView.text = obj.name;
+                self.latitudeTextField.text = @(obj.location.coordinate.latitude).stringValue;
+                self.longitudeTextField.text = @(obj.location.coordinate.longitude).stringValue;
+            }];
+        }
+        
+    }];
+}
+
+/// 反地理编码
+- (IBAction)reverselyCode:(UIButton *)sender {
+    
+}
+
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    [self.view endEditing:YES];
 }
 
 @end

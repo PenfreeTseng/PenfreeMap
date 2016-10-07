@@ -53,11 +53,56 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="oyn-fH-7oY">
+                                <rect key="frame" x="220" y="240" width="240" height="172"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="z5I-Ct-xDj">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="67"/>
+                                        <color key="backgroundColor" red="1" green="0.4431372549" blue="0.36862745099999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0MG-Xu-hJ0">
+                                        <rect key="frame" x="0.0" y="72" width="240" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zb1-yu-LJQ">
+                                        <rect key="frame" x="0.0" y="107" width="240" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="TuF-M0-OKQ">
+                                        <rect key="frame" x="0.0" y="142" width="240" height="30"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YH7-4V-GGW">
+                                                <rect key="frame" x="0.0" y="0.0" width="115" height="30"/>
+                                                <state key="normal" title="地理编码"/>
+                                                <connections>
+                                                    <action selector="geoCode:" destination="BYZ-38-t0r" eventType="touchUpInside" id="A6H-7r-yqI"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7SC-Y8-Jmm">
+                                                <rect key="frame" x="125" y="0.0" width="115" height="30"/>
+                                                <state key="normal" title="反地理编码"/>
+                                                <connections>
+                                                    <action selector="reverselyCode:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Pfl-9g-iEB"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="172" id="mWh-Gt-JZ8"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="uzH-1b-Egt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2ZC-DY-oNj"/>
+                            <constraint firstItem="oyn-fH-7oY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5GW-hS-6oA"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ply-z5-pwh" secondAttribute="trailing" constant="20" id="9Ow-OC-zwP"/>
+                            <constraint firstItem="oyn-fH-7oY" firstAttribute="top" secondItem="uzH-1b-Egt" secondAttribute="bottom" constant="10" id="GTh-Lo-08O"/>
                             <constraint firstItem="QIo-aT-AgF" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="KSg-Aa-DJM"/>
                             <constraint firstItem="uzH-1b-Egt" firstAttribute="top" secondItem="QIo-aT-AgF" secondAttribute="bottom" constant="10" id="RXR-TY-tKT"/>
                             <constraint firstItem="QIo-aT-AgF" firstAttribute="top" secondItem="ply-z5-pwh" secondAttribute="bottom" constant="5" id="XoA-uh-0Ke"/>
@@ -68,8 +113,11 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="addrTextView" destination="z5I-Ct-xDj" id="uaO-HJ-u2X"/>
                         <outlet property="authStatusLabel" destination="ply-z5-pwh" id="xY3-gJ-7d4"/>
                         <outlet property="infoLabel" destination="QIo-aT-AgF" id="Lrr-z5-UDJ"/>
+                        <outlet property="latitudeTextField" destination="0MG-Xu-hJ0" id="NuH-59-gWG"/>
+                        <outlet property="longitudeTextField" destination="zb1-yu-LJQ" id="tXl-wN-uOS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
