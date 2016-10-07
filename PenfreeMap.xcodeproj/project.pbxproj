@@ -1,0 +1,534 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		21B980651DA4F41B001A30DD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 21B980641DA4F41B001A30DD /* main.m */; };
+		21B980681DA4F41B001A30DD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 21B980671DA4F41B001A30DD /* AppDelegate.m */; };
+		21B9806B1DA4F41B001A30DD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21B9806A1DA4F41B001A30DD /* ViewController.m */; };
+		21B9806E1DA4F41B001A30DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21B9806C1DA4F41B001A30DD /* Main.storyboard */; };
+		21B980701DA4F41B001A30DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21B9806F1DA4F41B001A30DD /* Assets.xcassets */; };
+		21B980731DA4F41B001A30DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21B980711DA4F41B001A30DD /* LaunchScreen.storyboard */; };
+		21B9807E1DA4F41B001A30DD /* PenfreeMapTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 21B9807D1DA4F41B001A30DD /* PenfreeMapTests.m */; };
+		21B980891DA4F41B001A30DD /* PenfreeMapUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 21B980881DA4F41B001A30DD /* PenfreeMapUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		21B9807A1DA4F41B001A30DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 21B980581DA4F41B001A30DD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 21B9805F1DA4F41B001A30DD;
+			remoteInfo = PenfreeMap;
+		};
+		21B980851DA4F41B001A30DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 21B980581DA4F41B001A30DD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 21B9805F1DA4F41B001A30DD;
+			remoteInfo = PenfreeMap;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		21B980601DA4F41B001A30DD /* PenfreeMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PenfreeMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		21B980641DA4F41B001A30DD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		21B980661DA4F41B001A30DD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		21B980671DA4F41B001A30DD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		21B980691DA4F41B001A30DD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		21B9806A1DA4F41B001A30DD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		21B9806D1DA4F41B001A30DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		21B9806F1DA4F41B001A30DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		21B980721DA4F41B001A30DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		21B980741DA4F41B001A30DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		21B980791DA4F41B001A30DD /* PenfreeMapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PenfreeMapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		21B9807D1DA4F41B001A30DD /* PenfreeMapTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PenfreeMapTests.m; sourceTree = "<group>"; };
+		21B9807F1DA4F41B001A30DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		21B980841DA4F41B001A30DD /* PenfreeMapUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PenfreeMapUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		21B980881DA4F41B001A30DD /* PenfreeMapUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PenfreeMapUITests.m; sourceTree = "<group>"; };
+		21B9808A1DA4F41B001A30DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		21B9805D1DA4F41B001A30DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21B980761DA4F41B001A30DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21B980811DA4F41B001A30DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		21B980571DA4F41B001A30DD = {
+			isa = PBXGroup;
+			children = (
+				21B980621DA4F41B001A30DD /* PenfreeMap */,
+				21B9807C1DA4F41B001A30DD /* PenfreeMapTests */,
+				21B980871DA4F41B001A30DD /* PenfreeMapUITests */,
+				21B980611DA4F41B001A30DD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		21B980611DA4F41B001A30DD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				21B980601DA4F41B001A30DD /* PenfreeMap.app */,
+				21B980791DA4F41B001A30DD /* PenfreeMapTests.xctest */,
+				21B980841DA4F41B001A30DD /* PenfreeMapUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		21B980621DA4F41B001A30DD /* PenfreeMap */ = {
+			isa = PBXGroup;
+			children = (
+				21B980661DA4F41B001A30DD /* AppDelegate.h */,
+				21B980671DA4F41B001A30DD /* AppDelegate.m */,
+				21B980691DA4F41B001A30DD /* ViewController.h */,
+				21B9806A1DA4F41B001A30DD /* ViewController.m */,
+				21B9806C1DA4F41B001A30DD /* Main.storyboard */,
+				21B9806F1DA4F41B001A30DD /* Assets.xcassets */,
+				21B980711DA4F41B001A30DD /* LaunchScreen.storyboard */,
+				21B980741DA4F41B001A30DD /* Info.plist */,
+				21B980631DA4F41B001A30DD /* Supporting Files */,
+			);
+			path = PenfreeMap;
+			sourceTree = "<group>";
+		};
+		21B980631DA4F41B001A30DD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				21B980641DA4F41B001A30DD /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		21B9807C1DA4F41B001A30DD /* PenfreeMapTests */ = {
+			isa = PBXGroup;
+			children = (
+				21B9807D1DA4F41B001A30DD /* PenfreeMapTests.m */,
+				21B9807F1DA4F41B001A30DD /* Info.plist */,
+			);
+			path = PenfreeMapTests;
+			sourceTree = "<group>";
+		};
+		21B980871DA4F41B001A30DD /* PenfreeMapUITests */ = {
+			isa = PBXGroup;
+			children = (
+				21B980881DA4F41B001A30DD /* PenfreeMapUITests.m */,
+				21B9808A1DA4F41B001A30DD /* Info.plist */,
+			);
+			path = PenfreeMapUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		21B9805F1DA4F41B001A30DD /* PenfreeMap */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 21B9808D1DA4F41B001A30DD /* Build configuration list for PBXNativeTarget "PenfreeMap" */;
+			buildPhases = (
+				21B9805C1DA4F41B001A30DD /* Sources */,
+				21B9805D1DA4F41B001A30DD /* Frameworks */,
+				21B9805E1DA4F41B001A30DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PenfreeMap;
+			productName = PenfreeMap;
+			productReference = 21B980601DA4F41B001A30DD /* PenfreeMap.app */;
+			productType = "com.apple.product-type.application";
+		};
+		21B980781DA4F41B001A30DD /* PenfreeMapTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 21B980901DA4F41B001A30DD /* Build configuration list for PBXNativeTarget "PenfreeMapTests" */;
+			buildPhases = (
+				21B980751DA4F41B001A30DD /* Sources */,
+				21B980761DA4F41B001A30DD /* Frameworks */,
+				21B980771DA4F41B001A30DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				21B9807B1DA4F41B001A30DD /* PBXTargetDependency */,
+			);
+			name = PenfreeMapTests;
+			productName = PenfreeMapTests;
+			productReference = 21B980791DA4F41B001A30DD /* PenfreeMapTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		21B980831DA4F41B001A30DD /* PenfreeMapUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 21B980931DA4F41B001A30DD /* Build configuration list for PBXNativeTarget "PenfreeMapUITests" */;
+			buildPhases = (
+				21B980801DA4F41B001A30DD /* Sources */,
+				21B980811DA4F41B001A30DD /* Frameworks */,
+				21B980821DA4F41B001A30DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				21B980861DA4F41B001A30DD /* PBXTargetDependency */,
+			);
+			name = PenfreeMapUITests;
+			productName = PenfreeMapUITests;
+			productReference = 21B980841DA4F41B001A30DD /* PenfreeMapUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		21B980581DA4F41B001A30DD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Penfree.Tseng;
+				TargetAttributes = {
+					21B9805F1DA4F41B001A30DD = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = G7A3JZNXSP;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+					21B980781DA4F41B001A30DD = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 21B9805F1DA4F41B001A30DD;
+					};
+					21B980831DA4F41B001A30DD = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 21B9805F1DA4F41B001A30DD;
+					};
+				};
+			};
+			buildConfigurationList = 21B9805B1DA4F41B001A30DD /* Build configuration list for PBXProject "PenfreeMap" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 21B980571DA4F41B001A30DD;
+			productRefGroup = 21B980611DA4F41B001A30DD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				21B9805F1DA4F41B001A30DD /* PenfreeMap */,
+				21B980781DA4F41B001A30DD /* PenfreeMapTests */,
+				21B980831DA4F41B001A30DD /* PenfreeMapUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		21B9805E1DA4F41B001A30DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21B980731DA4F41B001A30DD /* LaunchScreen.storyboard in Resources */,
+				21B980701DA4F41B001A30DD /* Assets.xcassets in Resources */,
+				21B9806E1DA4F41B001A30DD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21B980771DA4F41B001A30DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21B980821DA4F41B001A30DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		21B9805C1DA4F41B001A30DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21B9806B1DA4F41B001A30DD /* ViewController.m in Sources */,
+				21B980681DA4F41B001A30DD /* AppDelegate.m in Sources */,
+				21B980651DA4F41B001A30DD /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21B980751DA4F41B001A30DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21B9807E1DA4F41B001A30DD /* PenfreeMapTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21B980801DA4F41B001A30DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21B980891DA4F41B001A30DD /* PenfreeMapUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		21B9807B1DA4F41B001A30DD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 21B9805F1DA4F41B001A30DD /* PenfreeMap */;
+			targetProxy = 21B9807A1DA4F41B001A30DD /* PBXContainerItemProxy */;
+		};
+		21B980861DA4F41B001A30DD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 21B9805F1DA4F41B001A30DD /* PenfreeMap */;
+			targetProxy = 21B980851DA4F41B001A30DD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		21B9806C1DA4F41B001A30DD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				21B9806D1DA4F41B001A30DD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		21B980711DA4F41B001A30DD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				21B980721DA4F41B001A30DD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		21B9808B1DA4F41B001A30DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		21B9808C1DA4F41B001A30DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		21B9808E1DA4F41B001A30DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = PenfreeMap/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.penfree.PenfreeMap;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		21B9808F1DA4F41B001A30DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = PenfreeMap/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.penfree.PenfreeMap;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		21B980911DA4F41B001A30DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PenfreeMapTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.penfree.PenfreeMapTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PenfreeMap.app/PenfreeMap";
+			};
+			name = Debug;
+		};
+		21B980921DA4F41B001A30DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PenfreeMapTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.penfree.PenfreeMapTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PenfreeMap.app/PenfreeMap";
+			};
+			name = Release;
+		};
+		21B980941DA4F41B001A30DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = PenfreeMapUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.penfree.PenfreeMapUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = PenfreeMap;
+			};
+			name = Debug;
+		};
+		21B980951DA4F41B001A30DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = PenfreeMapUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.penfree.PenfreeMapUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = PenfreeMap;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		21B9805B1DA4F41B001A30DD /* Build configuration list for PBXProject "PenfreeMap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				21B9808B1DA4F41B001A30DD /* Debug */,
+				21B9808C1DA4F41B001A30DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		21B9808D1DA4F41B001A30DD /* Build configuration list for PBXNativeTarget "PenfreeMap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				21B9808E1DA4F41B001A30DD /* Debug */,
+				21B9808F1DA4F41B001A30DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		21B980901DA4F41B001A30DD /* Build configuration list for PBXNativeTarget "PenfreeMapTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				21B980911DA4F41B001A30DD /* Debug */,
+				21B980921DA4F41B001A30DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		21B980931DA4F41B001A30DD /* Build configuration list for PBXNativeTarget "PenfreeMapUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				21B980941DA4F41B001A30DD /* Debug */,
+				21B980951DA4F41B001A30DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 21B980581DA4F41B001A30DD /* Project object */;
+}
