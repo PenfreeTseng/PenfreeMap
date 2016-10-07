@@ -109,7 +109,6 @@ static NSInteger locateTimes = 1;
     
     self.infoLabel.text = [NSString stringWithFormat:@"第%ld次定位\n经度:%f \n 纬度:%f", locateTimes, location.coordinate.latitude, location.coordinate.longitude];
     NSLog(@"定位%ld", locateTimes++);
-    NSLog(@"%@", location);
 }
 
 /// 授权状态发生改变时调用
@@ -143,13 +142,19 @@ static NSInteger locateTimes = 1;
 
 #pragma mark - 开始定位
 /// 更新位置
-- (IBAction)locate:(id)sender {
-    // 开始更新位置。
-    [self.locationMgr startUpdatingLocation];
-    
+- (IBAction)locate:(UIButton *)sender {
+    sender.selected = !sender.selected;
+    if (sender.selected) {
+        // 已经定位过了
+        [self.locationMgr stopUpdatingLocation];
+    } else {
+        // 开始更新位置。
+        [self.locationMgr startUpdatingLocation];
+    }
+
     // 开始更新位置，定位精确度从模糊到精确，注意调用此方法必须要实现代理方法locationManager:didFailWithError: 其他使用注意请参考苹果文档。
     // [self.locationMgr requestLocation];
-    
     // 以上两种方法同时只可有一种存在，苹果文档中有说明。
 }
+
 @end
