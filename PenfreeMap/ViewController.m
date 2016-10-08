@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import <CoreLocation/CoreLocation.h>
+#import "BaiduMapViewController.h"
 
 @interface ViewController () <CLLocationManagerDelegate>
 @property (nonatomic, strong) CLLocationManager *locationMgr;
@@ -110,6 +111,7 @@
 //
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.title = @"定位";
 }
 
 
@@ -197,6 +199,11 @@ static NSInteger locateTimes = 1;
     
 }
 
+/// 百度地图
+- (IBAction)baiduMap:(UIButton *)sender {
+    BaiduMapViewController *baiduMapVC = [[BaiduMapViewController alloc] init];
+    [self.navigationController pushViewController:baiduMapVC animated:YES];
+}
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     [self.view endEditing:YES];

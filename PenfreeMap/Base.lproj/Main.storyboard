@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="sFg-m3-xXh">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="信息展示" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QIo-aT-AgF">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="信息展示" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QIo-aT-AgF">
                                 <rect key="frame" x="40" y="100" width="520" height="80"/>
                                 <color key="backgroundColor" red="1" green="0.4431372549" blue="0.36862745099999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -28,7 +28,7 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uzH-1b-Egt">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uzH-1b-Egt">
                                 <rect key="frame" x="200" y="190" width="200" height="40"/>
                                 <color key="backgroundColor" red="0.95686274510000002" green="0.95686274510000002" blue="0.66666666669999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -44,7 +44,7 @@
                                     <action selector="locate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vcv-Q0-A8l"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="用户授权状态" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ply-z5-pwh">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="用户授权状态" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ply-z5-pwh">
                                 <rect key="frame" x="40" y="75" width="520" height="20"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="PTW-IM-7js"/>
@@ -82,7 +82,7 @@
                                                     <action selector="geoCode:" destination="BYZ-38-t0r" eventType="touchUpInside" id="A6H-7r-yqI"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7SC-Y8-Jmm">
+                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7SC-Y8-Jmm">
                                                 <rect key="frame" x="125" y="0.0" width="115" height="30"/>
                                                 <state key="normal" title="反地理编码"/>
                                                 <connections>
@@ -96,22 +96,36 @@
                                     <constraint firstAttribute="height" constant="172" id="mWh-Gt-JZ8"/>
                                 </constraints>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k4T-u6-f2V">
+                                <rect key="frame" x="260" y="546" width="80" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="I1Q-ka-F5y"/>
+                                    <constraint firstAttribute="width" constant="80" id="atY-ab-NXd"/>
+                                </constraints>
+                                <state key="normal" title="百度地图"/>
+                                <connections>
+                                    <action selector="baiduMap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KFq-GQ-dTz"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="uzH-1b-Egt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2ZC-DY-oNj"/>
                             <constraint firstItem="oyn-fH-7oY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5GW-hS-6oA"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="k4T-u6-f2V" secondAttribute="bottom" constant="10" id="6XV-lo-KN8"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ply-z5-pwh" secondAttribute="trailing" constant="20" id="9Ow-OC-zwP"/>
                             <constraint firstItem="oyn-fH-7oY" firstAttribute="top" secondItem="uzH-1b-Egt" secondAttribute="bottom" constant="10" id="GTh-Lo-08O"/>
                             <constraint firstItem="QIo-aT-AgF" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="KSg-Aa-DJM"/>
                             <constraint firstItem="uzH-1b-Egt" firstAttribute="top" secondItem="QIo-aT-AgF" secondAttribute="bottom" constant="10" id="RXR-TY-tKT"/>
                             <constraint firstItem="QIo-aT-AgF" firstAttribute="top" secondItem="ply-z5-pwh" secondAttribute="bottom" constant="5" id="XoA-uh-0Ke"/>
+                            <constraint firstItem="k4T-u6-f2V" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="acN-xk-GRw"/>
                             <constraint firstItem="QIo-aT-AgF" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="80" id="hFF-RE-wAx"/>
                             <constraint firstItem="ply-z5-pwh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oZp-fx-6Ko"/>
                             <constraint firstAttribute="trailingMargin" secondItem="QIo-aT-AgF" secondAttribute="trailing" constant="20" id="sTG-h0-A7c"/>
                             <constraint firstItem="ply-z5-pwh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="uhY-Hd-yZN"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="y7P-f9-Dut"/>
                     <connections>
                         <outlet property="addrTextView" destination="z5I-Ct-xDj" id="uaO-HJ-u2X"/>
                         <outlet property="authStatusLabel" destination="ply-z5-pwh" id="xY3-gJ-7d4"/>
@@ -121,6 +135,24 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1405" y="391"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="0J7-6c-ZmU">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="sFg-m3-xXh" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="LxG-l5-SQr">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="xYY-qr-JNw"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uMn-h2-0hZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="593" y="391"/>
         </scene>
