@@ -27,6 +27,7 @@
 		211583DD1DA8E632001286DE /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 211583DC1DA8E632001286DE /* CoreTelephony.framework */; };
 		211583DF1DA8E640001286DE /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 211583DE1DA8E640001286DE /* libstdc++.6.0.9.tbd */; };
 		211583E11DA8E698001286DE /* mapapi.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 211583E01DA8E698001286DE /* mapapi.bundle */; };
+		212FF5C81DA92953005C1356 /* locate.png in Resources */ = {isa = PBXBuildFile; fileRef = 212FF5C71DA92953005C1356 /* locate.png */; };
 		21B980651DA4F41B001A30DD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 21B980641DA4F41B001A30DD /* main.m */; };
 		21B980681DA4F41B001A30DD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 21B980671DA4F41B001A30DD /* AppDelegate.m */; };
 		21B9806B1DA4F41B001A30DD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21B9806A1DA4F41B001A30DD /* ViewController.m */; };
@@ -79,6 +80,7 @@
 		211583DC1DA8E632001286DE /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		211583DE1DA8E640001286DE /* libstdc++.6.0.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.0.9.tbd"; path = "usr/lib/libstdc++.6.0.9.tbd"; sourceTree = SDKROOT; };
 		211583E01DA8E698001286DE /* mapapi.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = mapapi.bundle; sourceTree = "<group>"; };
+		212FF5C71DA92953005C1356 /* locate.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = locate.png; sourceTree = "<group>"; };
 		21B980601DA4F41B001A30DD /* PenfreeMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PenfreeMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		21B980641DA4F41B001A30DD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		21B980661DA4F41B001A30DD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -164,6 +166,7 @@
 		211583AB1DA8DE61001286DE /* BaiduMap */ = {
 			isa = PBXGroup;
 			children = (
+				212FF5C61DA92953005C1356 /* Resources */,
 				211583E01DA8E698001286DE /* mapapi.bundle */,
 				211583C01DA8E0F2001286DE /* BaiduMapAPI_Base.framework */,
 				211583C11DA8E0F2001286DE /* BaiduMapAPI_Cloud.framework */,
@@ -174,6 +177,14 @@
 				211583C61DA8E0F3001286DE /* BaiduMapAPI_Utils.framework */,
 			);
 			path = BaiduMap;
+			sourceTree = "<group>";
+		};
+		212FF5C61DA92953005C1356 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				212FF5C71DA92953005C1356 /* locate.png */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		21B980571DA4F41B001A30DD = {
@@ -338,6 +349,7 @@
 				TargetAttributes = {
 					21B9805F1DA4F41B001A30DD = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 739M3G9C47;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
@@ -382,6 +394,7 @@
 				21B980731DA4F41B001A30DD /* LaunchScreen.storyboard in Resources */,
 				211583E11DA8E698001286DE /* mapapi.bundle in Resources */,
 				21B980701DA4F41B001A30DD /* Assets.xcassets in Resources */,
+				212FF5C81DA92953005C1356 /* locate.png in Resources */,
 				21B9806E1DA4F41B001A30DD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
